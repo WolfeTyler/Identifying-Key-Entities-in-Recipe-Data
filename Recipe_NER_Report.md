@@ -6,7 +6,7 @@ date: "July 2025"
 
 # Executive Summary
 
-We developed a Conditional Random Field (CRF)–based named‑entity recognition model to automatically tag ingredients, quantities, and units in recipe text. After ingesting and cleaning a JSON dataset of ~6,200 recipes, we performed exploratory analysis to understand token distributions, engineered pure‑Python features (lexical, numeric, contextual), and trained a weighted CRF. The final model achieves >95% overall accuracy on held‑out validation data, with particularly strong performance on ingredients and quantities, and identified unit recognition as the primary area for further improvement.
+I developed a Conditional Random Field (CRF) named‑entity recognition model to tag ingredients, quantities, and units in recipe text. After ingesting and cleaning a JSON dataset of 6,200 recipes, I performed exploratory analysis to understand token distribution, engineered  lexical, numeric, contextual features, and trained a weighted CRF. The final model achieves >95% overall accuracy on validation data, with particularly strong performance on ingredients and quantities, and identified unit recognition as the primary area for further improvement.
 
 ---
 
@@ -131,16 +131,4 @@ Confusion matrix heatmap (Figure 3):
 
 ## 8. Conclusions & Recommendations
 
-- The CRF model effectively recognizes ingredients and quantities, but unit detection lags—especially for less‑common or context‑sensitive units.  
-- **Next steps:**  
-  1. **Expand unit vocabulary** with domain‑specific terms (e.g., “cloves”, “pinch”).  
-  2. **Add phrase‑level features** (e.g., bigrams around numeric tokens).  
-  3. **Fine‑tune regex patterns** to better capture mixed‑unit formats.
-
----
-
-## Appendix
-
-- **Code notebook:** `Identifying_Key_Entities_Recipe_Data.ipynb`  
-- **Model:** `crf_model.pkl`  
-- **Data Dictionary:** Included in starter notebook.  
+- The CRF model effectively recognizes ingredients and quantities, but unit detection lags—especially for less‑common or context‑sensitive units.

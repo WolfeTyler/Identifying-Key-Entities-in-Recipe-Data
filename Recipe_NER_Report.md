@@ -1,6 +1,6 @@
 ---
 title: "Identifying Key Entities in Recipe Data"
-author: "Your Name"
+author: "Tyler Wolfe"
 date: "July 2025"
 ---
 
